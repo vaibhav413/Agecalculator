@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate your exact age in years, months, and days.">
+    <title>Age Calculator | AWS Cloud Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="calculator">
+        <div class="birthday-icon" aria-hidden="true">🎂</div>
+        <h1>Age Calculator</h1>
+        <p class="subtitle">
+            Discover your exact age in years, months, and days.
+        </p>
+
+        <form id="ageForm">
+            <label for="dob">Enter your date of birth</label>
+            <input type="date" id="dob" name="dob" required>
+            <button type="submit">Calculate My Age</button>
+        </form>
+
+        <p id="message" role="alert" aria-live="polite"></p>
+
+        <section id="result" class="result" aria-live="polite" hidden>
+            <h2>Your Age</h2>
+            <div class="age-grid">
+                <div class="age-card">
+                    <strong id="years">0</strong>
+                    <span>Years</span>
+                </div>
+                <div class="age-card">
+                    <strong id="months">0</strong>
+                    <span>Months</span>
+                </div>
+                <div class="age-card">
+                    <strong id="days">0</strong>
+                    <span>Days</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Age Calculator | Powered by AWS Cloud</p>
+        </footer>
+    </main>
+</body>
+</html>
